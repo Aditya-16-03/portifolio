@@ -53,7 +53,7 @@ const TypingEffect = ({ words }) => {
 };
 
 /* ─── Magnetic Button ───────────────────────────────────────── */
-const MagneticButton = ({ children, style, href, target, rel, onClick }) => {
+const MagneticButton = ({ children, style, href, target, rel, onClick, download }) => {
   const ref = useRef(null);
 
   const onMove = useCallback((e) => {
@@ -76,6 +76,7 @@ const MagneticButton = ({ children, style, href, target, rel, onClick }) => {
       href={href}
       target={target}
       rel={rel}
+      download={download}
       onClick={onClick}
       onMouseMove={onMove}
       onMouseLeave={onLeave}
@@ -264,6 +265,7 @@ const Hero = () => {
                 href={personalInfo.resumeUrl}
                 target="_blank"
                 rel="noopener noreferrer"
+                download
                 style={{
                   padding: '12px 28px', borderRadius: 12,
                   background: 'linear-gradient(135deg, #7c3aed, #0ea5e9)',
