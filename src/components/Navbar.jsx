@@ -10,7 +10,6 @@ const NAV_LINKS = [
   { label: 'Education',    href: '#education' },
   { label: 'Achievements', href: '#achievements' },
   { label: 'Coding Activity', href: '#github' },
-  { label: 'Contact',      href: '#contact' },
 ];
 
 const Navbar = () => {

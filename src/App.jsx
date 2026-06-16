@@ -19,7 +19,6 @@ import Projects from './components/Projects';
 import Education from './components/Education';
 import Achievements from './components/Achievements';
 import GitHubSection from './components/GitHubSection';
-import Contact from './components/Contact';
 import Footer from './components/Footer';
 
 function App() {
@@ -80,7 +79,6 @@ function App() {
             <Education />
             <Achievements />
             <GitHubSection />
-            <Contact />
           </main>
 
           <Footer />
